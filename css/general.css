@@ -57,6 +57,7 @@ body {
 	color: var(--text-color);
 	font-size: var(--normal-font-size);
 	overflow-x: hidden;
+	overflow: hidden;
 }
 
 img,
@@ -96,6 +97,10 @@ h3,
 h4 {
 	color: var(--text-color);
 	font-weight: var(--font-semi-bold);
+}
+
+.main-container {
+	overflow: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -229,7 +234,7 @@ input:hover {
 	background-color: var(--text-color);
 	color: var(--title-color);
 	cursor: pointer;
-	z-index: var(--z-fixed);
+	z-index: 80;
 	opacity: 0;
 	transition: opacity 0.5s ease-in;
 }
