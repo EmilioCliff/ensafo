@@ -100,7 +100,7 @@ h4 {
 }
 
 .main-container {
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -252,6 +252,7 @@ header {
 .is-visible {
 	background-color: transparent;
 	backdrop-filter: blur(30px);
+	-webkit-backdrop-filter: blur(30px);
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
