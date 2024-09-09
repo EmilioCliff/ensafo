@@ -8,6 +8,8 @@
 	/*========== Colors ==========*/
 	--hue: 204;
 	--first-color: hsl(204, 46%, 56%);
+	--first-color-alt: rgba(17, 44, 145, 0.7);
+	--first-color-alt-2: #002b8f;
 	--header-color: rgb(4, 63, 114);
 	--body-color: rgb(24, 113, 182);
 	--subtitle-color: hsl(var(--hue), 100%, 60%);
@@ -53,7 +55,6 @@ html {
 }
 
 body {
-	background-color: var(--body-color);
 	color: var(--text-color);
 	font-size: var(--normal-font-size);
 	overflow-x: hidden;
@@ -99,6 +100,10 @@ h4 {
 }
 
 .main-container {
+	max-width: 1440px;
+	width: 100%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin: 0 auto;
 	overflow-x: hidden;
 }
 
@@ -153,6 +158,14 @@ h4 {
 	text-align: center;
 	margin-bottom: 0.5rem;
 	font-family: var(--secondary-style);
+}
+
+.section__icon {
+	width: 5rem;
+	align-self: center;
+	display: block;
+	margin-inline: auto;
+	margin-block: 0.5rem 4rem;
 }
 
 .section__info {
@@ -344,35 +357,6 @@ nav {
 	left: 0;
 }
 
-/* For Large devices */
-@media screen and (min-width: 728px) {
-	.nav__menu {
-		position: relative;
-		left: 0;
-		flex-direction: row;
-		justify-content: center;
-		padding: 0;
-		background-image: none;
-		column-gap: 1.5rem;
-	}
-
-	.nav__link {
-		color: var(--text-color);
-		font-size: var(--h3-font-size);
-	}
-
-	.nav__link:hover {
-		color: var(--title-color);
-	}
-
-	.nav__menu-container,
-	.nav__icon,
-	.nav__menu hr,
-	.nav__toogle {
-		display: none;
-	}
-}
-
 /*=============== FOOTER ===============*/
 .footer__section {
 	background-color: black;
@@ -443,6 +427,35 @@ nav {
 
 .footer__credits p span {
 	color: var(--first-color);
+}
+
+/* For Large devices */
+@media screen and (min-width: 728px) {
+	.nav__menu {
+		position: relative;
+		left: 0;
+		flex-direction: row;
+		justify-content: center;
+		padding: 0;
+		background-image: none;
+		column-gap: 1.5rem;
+	}
+
+	.nav__link {
+		color: var(--text-color);
+		font-size: var(--h3-font-size);
+	}
+
+	.nav__link:hover {
+		color: var(--title-color);
+	}
+
+	.nav__menu-container,
+	.nav__icon,
+	.nav__menu hr,
+	.nav__toogle {
+		display: none;
+	}
 }
 
 /*=============== BREAKPOINTS ===============*/
@@ -536,6 +549,10 @@ nav {
 	.section__subtitle {
 		font-size: 1.5rem;
 		margin-bottom: 1rem;
+	}
+
+	.section__icon {
+		margin-block: 0.5rem 2rem;
 	}
 
 	.section__info {

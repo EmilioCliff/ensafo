@@ -90,12 +90,10 @@ img {
 /* Sakura petals */
 
 /*=============== BREAKPOINTS ===============*/
-/* For small devices */
-
 /* For medium devices */
+@media screen and (min-width: 728px) and (max-width: 1024px) {
+}
 
 /* For large devices */
-
-/* For 2K resolutions (2048 x 1152) */
-
-/* For taller devices */
+@media screen and (min-width: 1024px) {
+}
