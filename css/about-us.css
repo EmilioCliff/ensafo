@@ -133,8 +133,8 @@
 
 .our-team__member img {
 	transform: scale(1.1);
-	width: 12rem;
-	height: 12rem;
+	width: 10rem;
+	height: 10rem;
 	border-radius: 50%;
 	object-fit: cover;
 	object-position: top;
@@ -144,7 +144,7 @@
 
 .our-team__member h1 {
 	margin-block: 1.5rem 0.2rem;
-	font-size: 2rem;
+	font-size: 1.8rem;
 	font-weight: var(--font-bold);
 	color: var(--first-color-alt-2);
 }

@@ -100,7 +100,8 @@ body::after {
 }
 
 .footer__section a {
-	color: var(--first-color-alt-2);
+	/* color: var(--first-color-alt-2); */
+	color: black;
 	font-size: 1rem;
 	transition: color 0.5s ease;
 }
@@ -119,6 +120,7 @@ body::after {
 
 .footer__credits p span {
 	color: var(--first-color-alt-2);
+	/* color: black; */
 }
 
 /*=============== BREAKPOINTS ===============*/
