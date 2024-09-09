@@ -84,6 +84,10 @@
 	font-size: 1.15rem;
 }
 
+.founded-info .divider {
+	display: none;
+}
+
 .founded-info__columns {
 	margin-top: 3rem;
 	display: grid;
@@ -286,10 +290,6 @@
 	.about-company {
 		grid-template-columns: 1fr 1fr;
 		column-gap: 3rem;
-	}
-
-	.founded-info .divider {
-		display: none;
 	}
 
 	.about-company__image {
