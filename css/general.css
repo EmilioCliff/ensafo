@@ -251,6 +251,12 @@ input:hover {
 	transition: opacity 0.5s ease-in;
 }
 
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+	animation-play-state: paused !important;
+}
+
 .transform-up,
 .transform-right,
 .transform-left {
