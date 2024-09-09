@@ -81,6 +81,7 @@ body::after {
 	left: 0;
 	right: 0;
 	bottom: 0px;
+	margin-bottom: -2px;
 }
 
 .landing-current-link {
