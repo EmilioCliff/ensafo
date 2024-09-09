@@ -1,6 +1,7 @@
 .about-company {
 	display: grid;
 	row-gap: 3rem;
+	margin-top: -2px;
 }
 
 .title__content-container {
@@ -307,6 +308,7 @@
 	.about-company {
 		grid-template-columns: 1fr 1fr;
 		column-gap: 3rem;
+		margin-top: -2px;
 	}
 
 	.about-company__image {
@@ -362,6 +364,7 @@
 	.about-company {
 		grid-template-columns: 1fr 1fr;
 		column-gap: 3rem;
+		margin-top: -2px;
 	}
 
 	.about-company__image {
