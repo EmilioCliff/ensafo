@@ -35,6 +35,7 @@
 
 .swiper {
 	width: 90vw;
+	max-width: 40rem;
 }
 
 .swiper-slide img {
