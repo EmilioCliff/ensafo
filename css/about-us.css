@@ -19,6 +19,16 @@
 	width: 5rem;
 }
 
+.about-company__image {
+	animation-delay: 2s;
+	animation-duration: 1.5s;
+}
+
+.about-company__content {
+	animation-delay: 1.5s;
+	animation-duration: 1.2s;
+}
+
 .about-company__content p:nth-child(2) {
 	/* color: var(--title-color); */
 	color: black;
@@ -32,14 +42,14 @@
 }
 
 .about-company__content .btn {
-	background-color: var(--first-color);
+	background-color: var(--first-color-alt);
 	color: white;
 	cursor: pointer;
 	transition: color 0.25s ease, background-color 0.25s ease;
 }
 
 .about-company__content .btn:hover {
-	color: var(--first-color);
+	color: var(--first-color-alt);
 	background-color: white;
 }
 
@@ -193,7 +203,8 @@
 	vertical-align: middle;
 	width: 5rem;
 	height: 2px;
-	background: var(--subtitle-color);
+	/* background: var(--subtitle-color); */
+	background: white;
 	margin-inline: 1.2rem 0.5rem;
 }
 
@@ -221,7 +232,8 @@
 .bd-article .hr div {
 	width: 0%;
 	height: 2px;
-	background-color: var(--subtitle-color);
+	/* background-color: var(--subtitle-color); */
+	background-color: white;
 	transition: width 0.5s ease;
 }
 
@@ -244,6 +256,7 @@
 
 .question-btn {
 	display: flex;
+	background-color: #345fae;
 }
 
 .question-btn span {
@@ -252,23 +265,27 @@
 
 .question-btn span svg {
 	width: 1.4rem;
+	fill: black;
 }
 
 .plus-icon,
 .minus-icon {
 	cursor: pointer;
+	transition: transform 0.5s ease;
 }
 
+.plus-icon:hover,
+.minus-icon:hover {
+	transform: rotate(90deg);
+}
+
+.read-article .plus-icon,
 .minus-icon {
 	display: none;
 }
 
 .read-article .minus-icon {
 	display: inline;
-}
-
-.read-article .plus-icon {
-	display: none;
 }
 
 .company-bd__image {

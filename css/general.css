@@ -251,6 +251,49 @@ input:hover {
 	transition: opacity 0.5s ease-in;
 }
 
+.transform-up,
+.transform-right,
+.transform-left {
+	opacity: 0;
+	animation: no-transform 0.5s 1s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+}
+
+.transform-left {
+	transform: translateX(-4rem);
+}
+
+.transform-right {
+	transform: translateX(4rem);
+}
+
+.transform-up {
+	transform: translateY(4rem);
+}
+
+.transform-down {
+	transform: translateY(-4rem);
+}
+
+.transform-svg-up {
+	transform: translateY(4rem);
+	opacity: 0;
+	animation: svg-transform 0.5s 1s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+}
+
+@keyframes svg-transform {
+	100% {
+		opacity: 0.4;
+		transform: none;
+	}
+}
+
+@keyframes no-transform {
+	100% {
+		opacity: 1;
+		transform: none;
+	}
+}
+
 /*=============== HEADER & NAV ===============*/
 header {
 	position: fixed;

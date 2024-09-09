@@ -5,6 +5,8 @@
 .our-services {
 	padding-block: 3rem 2rem;
 	margin-bottom: 3rem;
+	animation-delay: 1.5s;
+	animation-duration: 1.2s;
 }
 
 .our-services .section__title {

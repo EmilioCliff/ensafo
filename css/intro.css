@@ -70,6 +70,7 @@ body::after {
 	color: white;
 	font-weight: var(--font-semi-bold);
 	font-size: 1rem;
+	animation-delay: 1.2s;
 }
 
 .heading-img {
@@ -100,8 +101,8 @@ body::after {
 }
 
 .footer__section a {
-	/* color: var(--first-color-alt-2); */
-	color: black;
+	color: var(--first-color-alt-2);
+	/* color: black; */
 	font-size: 1rem;
 	transition: color 0.5s ease;
 }
@@ -121,6 +122,12 @@ body::after {
 .footer__credits p span {
 	color: var(--first-color-alt-2);
 	/* color: black; */
+}
+
+.map {
+	width: 100vw;
+	height: 20rem;
+	margin-top: 8rem;
 }
 
 /*=============== BREAKPOINTS ===============*/

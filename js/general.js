@@ -75,6 +75,12 @@ window.addEventListener("scroll", handleScroll);
 
 onScroll();
 
+document.body.className += "js-loading";
+window.addEventListener("load", showPage, false);
+function showPage() {
+	document.body.className = document.body.className.replace("js-loading", "");
+}
+
 // const scrollToTopTarget = document.getElementById("scrollToTopTarget");
 
 // scrollBtn.addEventListener("click", function (event) {
